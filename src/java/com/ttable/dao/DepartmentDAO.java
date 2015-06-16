@@ -136,10 +136,9 @@ public class DepartmentDAO extends DAO<Department> {
                 // get the hod from database and assign it to the lecturer
                 // attribute of department
                 LecturerDAO lecturerDAO = new LecturerDAO(this.connection);
-                department.setHod(lecturerDAO.getById(rs.getString("user_id"))); 
+                //department.setHod(lecturerDAO.getById(rs.getString("user_id")));
             } 
-            else
-                department = null;
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }

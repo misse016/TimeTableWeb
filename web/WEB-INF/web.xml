@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>Timetable</display-name>
+    <welcome-file-list>
+        <welcome-file>IndexServlet</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>Index</servlet-name>
+        <servlet-class>com.ttable.controller.Index</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>BlocklistServlet</servlet-name>
+        <servlet-class>com.ttable.controller.BlocklistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BlocklistServlet</servlet-name>
+        <url-pattern>/BlocklistServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Blocklist</servlet-name>
+        <servlet-class>com.ttable.controller.Blocklist</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Blocklist</servlet-name>
+        <url-pattern>/blocklist</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.ttable.controller.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>com.ttable.controller.Home</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>com.ttable.controller.Admin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.ttable.controller.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/AdminServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.ttable.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>com.ttable.controller.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/HomeServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.ttable.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LevelServlet</servlet-name>
+        <servlet-class>com.admin.servlets.LevelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LevelServlet</servlet-name>
+        <url-pattern>/LevelServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ClassroomServlet</servlet-name>
+        <servlet-class>com.admin.servlets.ClassroomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClassroomServlet</servlet-name>
+        <url-pattern>/ClassroomServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>com.admin.servlets.CourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>/CourseServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Classroom</servlet-name>
+        <servlet-class>com.ttable.controller.Classroom</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Classroom</servlet-name>
+        <url-pattern>/classroom</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MyClassroom</servlet-name>
+        <servlet-class>com.admin.servlets.MyClassroom</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyClassroom</servlet-name>
+        <url-pattern>/myclassroom</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

@@ -132,10 +132,6 @@ public class Lecturer {
     }
     
     public boolean validatePassword(String password) {
-        if (this.password == password) {
-            return true;
-        }
-        else
-            return false;
+        return this.password.equals(password)&&password!=null;
     }    
 }

@@ -159,14 +159,16 @@ public class LecturerDAO extends DAO<Lecturer> {
 
     @Override
     public Lecturer getById(String id) {
-        Lecturer lecturer = new Lecturer();
+        Lecturer lecturer =null;
         try {
             PreparedStatement preparedStatement = 
                     connection.prepareStatement("SELECT * FROM lecturer WHERE user_id=?");
             preparedStatement.setString(1, id);
             
+            
             ResultSet rs = preparedStatement.executeQuery();
             if (rs.next()) {
+                lecturer = new Lecturer();
                 lecturer.setLecturerId(rs.getString("user_id"));
                 lecturer.setFirstName(rs.getString("first_name"));
                 lecturer.setLastName(rs.getString("last_name"));
